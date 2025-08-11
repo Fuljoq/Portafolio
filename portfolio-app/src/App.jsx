@@ -1,9 +1,8 @@
-import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header/Header';
 import ParticleBackground from './components/ParticleBackground/ParticleBackground';
 import Footer from './components/Footer/Footer';
-import HomePage from './pages/HomePage';
+import Portafolio from './pages/HomePage';
 import ContactPage from './pages/ContactPage';
 import About from './components/About/About';
 import Projects from './components/Projects/Projects';
@@ -16,7 +15,7 @@ function App() {
       <Header />
       <main>
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path="/" element={<Portafolio />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
@@ -25,7 +24,7 @@ function App() {
       </main>
       <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
